@@ -1,3 +1,5 @@
-install_apache:
-  pkg.installed:
-    - name: apache2
+{{ saltenv }}:
+  '*':
+    - tmpfile
+  'web_server':
+    - match: nodegroup

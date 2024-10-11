@@ -1,4 +1,4 @@
-{{ saltenv }}:
+base:
   '*':
     - tmpfile
   'web_server':
